@@ -4,5 +4,12 @@ spring:
     url: jdbc:mysql://43.138.172.202:3306/springcloudstudy?serverTimezone=Asia/Shanghai&characterEncoding=utf-8&useSSl=true&useUnicode=true
     username: root
     password: 123456
+  application:
+    name: borrowservice
+  cloud:
+    nacos:
+      discovery:
+        # 配置Nacos注册中心地址
+        server-addr: http://43.138.172.202:8848/
 server:
   port: 8021

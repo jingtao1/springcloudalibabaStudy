@@ -28,6 +28,12 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!--        为引入alibaba nacos 进行引用-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

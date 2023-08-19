@@ -14,6 +14,7 @@ public class BorrowController {
     @Resource
     BorrowService service;
 
+
     @RequestMapping("/borrow/{uid}")
     UserBorrowDetail findUserBorrows(@PathVariable("uid") int uid){
         return service.getUserBorrowDetailByUid(uid);
