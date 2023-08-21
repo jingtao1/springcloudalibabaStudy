@@ -11,6 +11,6 @@ spring:
       discovery:
         # 配置Nacos注册中心地址
         server-addr: http://43.138.172.202:8848/
-        ephemeral: false
+#        ephemeral: false
 server:
   port: 8011

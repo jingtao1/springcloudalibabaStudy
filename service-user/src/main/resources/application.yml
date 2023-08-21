@@ -1,15 +1,14 @@
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://43.138.172.202:3306/springcloudstudy?serverTimezone=Asia/Shanghai&characterEncoding=utf-8&useSSl=true&useUnicode=true
-    username: root
-    password: 123456
-  application:
-    name: userservice
   cloud:
     nacos:
       discovery:
         # 配置Nacos注册中心地址
         server-addr: http://43.138.172.202:8848/
+        namespace: 1d949d19-5245-4398-8918-4719dce4abf1 #配置当前的命名空间
+    sentinel:
+     transport:
+       dashboard: localhost:8858
+#       client-ip: 192.168.5.2
+#       port: 8031
 server:
   port: 8031

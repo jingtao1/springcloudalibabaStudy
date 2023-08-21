@@ -11,5 +11,10 @@ spring:
       discovery:
         # 配置Nacos注册中心地址
         server-addr: http://43.138.172.202:8848/
+        cluster-name: shenyang
+     #通过配置以下内容，达到nacos开启负载均衡功能
+    loadbalancer:
+      nacos:
+        enabled: true
 server:
   port: 8021
