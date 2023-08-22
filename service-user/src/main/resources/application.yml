@@ -4,10 +4,13 @@ spring:
       discovery:
         # 配置Nacos注册中心地址
         server-addr: http://43.138.172.202:8848/
-        namespace: 1d949d19-5245-4398-8918-4719dce4abf1 #配置当前的命名空间
+        namespace: 757f9eec-6a4f-4833-9e04-bc42e68f149e    #配置当前的命名空间
     sentinel:
-     transport:
-       dashboard: localhost:8858
+      transport:
+        dashboard: localhost:8858
+      block-page: /blocked #开启当前指定重定向限流报错页面
+      web-context-unify: false
+#    web-context-unify: false
 #       client-ip: 192.168.5.2
 #       port: 8031
 server:

@@ -12,4 +12,4 @@ spring:
         file-extension: yml
         # 配置中心服务器地址，也就是Nacos地址
         server-addr: http://43.138.172.202:8848
-        namespace: 1d949d19-5245-4398-8918-4719dce4abf1
+        namespace: 757f9eec-6a4f-4833-9e04-bc42e68f149e
